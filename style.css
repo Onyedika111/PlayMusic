@@ -541,6 +541,7 @@ body::before {
   height: 100%;
   width: 100%;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .container .right .artist h5 div {
