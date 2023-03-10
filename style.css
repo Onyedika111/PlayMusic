@@ -101,7 +101,7 @@ body::before {
 }
 
 .container .left .sidebar .active:hover::before {
-  left: 5rem;
+  left: 4rem;
 }
 
 .container .middle {
@@ -829,6 +829,24 @@ body::before {
   }
 }
 
+@media screen and (max-width: 855px){
+  .master_play > span, .master_play .bar, .master_play .vol{
+    display: none;
+    }
+
+    .master_play .icon{
+      font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 631px){
+  
+
+    .master_play .icon{
+      font-size: 2rem;
+    }
+}
+
 @media screen and (max-width: 500px) {
   .container {
       grid-template-columns: 14vw 52vw 20vw;
@@ -871,7 +889,11 @@ body::before {
   }
 
   .master_play{
-    padding: 0px 15px;
+    padding: 0px 20px;
+  }
+
+  .master_play .icon{
+    font-size: 1.8rem;
   }
 
   .master_play img{
@@ -922,6 +944,9 @@ body::before {
     padding: 0px 10px;
   }
 
+  .master_play .icon{
+    font-size: 1.5rem;
+  }
   .master_play h5 {
     margin-left: 0.4rem;
 }
