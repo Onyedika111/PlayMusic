@@ -81,7 +81,7 @@ body::before {
 }
 
 .container .left .sidebar .menu_item:hover {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .container .left .sidebar .active i {
@@ -96,12 +96,12 @@ body::before {
   height: 60%;
   position: absolute;
   background: white;
-  left: 3rem;
+  left: 2rem;
   border-radius: 2px;
 }
 
 .container .left .sidebar .active:hover::before {
-  left: 4rem;
+  left: 3rem;
 }
 
 .container .middle {
@@ -589,6 +589,7 @@ body::before {
 
 .master_play h5 {
   margin-left: 1rem;
+  font-size: 0.7rem;
 }
 
 .master_play h5 div {
@@ -724,11 +725,12 @@ body::before {
   display: block;
   position: relative;
   background: white;
-  height: 100%;
+  height: 30%;
   width: 5px;
   border-radius: 50px;
   margin: 0 3px;
-  animation: animate 1.2s linear infinite;
+  /* animation: animate 1.2s linear infinite; */
+  animation: unset;
 }
 
 @keyframes animate {
@@ -741,31 +743,35 @@ body::before {
   }
 }
 
-.master_play .loader .stroke:nth-child(1) {
-  animation-delay: 0s;
+
+
+/* JAVASCRIPT  */
+.master_play .active2 .stroke{
+  height: 100%;
+  animation: animate 1.2s linear infinite; 
 }
 
-.master_play .loader .stroke:nth-child(2) {
+.master_play .active2 .stroke:nth-child(2) {
   animation-delay: 0.3s;
 }
 
-.master_play .loader .stroke:nth-child(3) {
+.master_play .active2 .stroke:nth-child(3) {
   animation-delay: 0.6s;
 }
 
-.master_play .loader .stroke:nth-child(4) {
+.master_play .active2 .stroke:nth-child(4) {
   animation-delay: 0.9s;
 }
 
-.master_play .loader .stroke:nth-child(5) {
+.master_play .active2 .stroke:nth-child(5) {
   animation-delay: 6s;
 }
 
-.master_play .loader .stroke:nth-child(6) {
+.master_play .active2 .stroke:nth-child(6) {
   animation-delay: 3s;
 }
 
-.master_play .loader .stroke:nth-child(7) {
+.master_play .active2 .stroke:nth-child(7) {
   animation-delay: 0s;
 }
 
@@ -840,18 +846,20 @@ body::before {
     }
 }
 
-@media screen and (max-width: 631px){
+/* @media screen and (max-width: 631px){
   
 
     .master_play .icon{
       font-size: 2rem;
     }
-}
+} */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 631px) {
   .container {
-      grid-template-columns: 14vw 52vw 20vw;
+      grid-template-columns: 14vw 67vw 16vw;
+      column-gap: 1rem;
     }
+    
 
   .container .middle .playlist{
     margin-top: 1rem;
@@ -867,6 +875,10 @@ body::before {
 
   .container .middle .library .library_song .song_item > div{
     gap: 5px;
+  }
+
+  .container .middle .library .library_song .song_item h5{
+   font-size: 0.7rem;
   }
 
   .container .right .image{
@@ -914,10 +926,28 @@ body::before {
   
 }
 
-@media screen and (max-width: 370px){
+
+
+@media screen and (max-width: 500px){
+  .container{
+    grid-template-columns: 17vw 71vw 3vw;
+  }
+  .container .right .artist{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 424px){
+  .master_play .icon{
+font-size: 1.5rem;
+  }
+ }
+
+@media screen and (max-width: 376px){
 
   .container {
-    grid-template-columns: 17vw 64vw 3vw;
+    grid-template-columns: 17vw 71vw 3vw;
+    column-gap: 1rem;
   }
   .container .right .artist{
     display: none;
@@ -956,3 +986,9 @@ body::before {
   max-width: 60px;
 }
 }
+
+@media screen and (max-width: 352px){
+  .master_play .icon{
+font-size: 1rem;
+  }
+ }

@@ -1,401 +1,391 @@
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-        />
-        <link rel="stylesheet" href="./style.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
-        <title>Play Music</title>
-      </head>
-      <body>
-        <div class="container">
-          <div class="left">
-            <img src="./img/KDS CODER.png" />
-            <div class="sidebar">
-              <div class="menu_item">
-                <i class="bi bi-house-fill" title="Home"></i>
-              </div>
+    <title>Play Music</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <img src="./img/KDS CODER.png" />
+        <div class="sidebar">
+          <div class="menu_item">
+            <i class="bi bi-house-fill" title="Home"></i>
+          </div>
 
-              <div class="menu_item active">
-                <i class="bi bi-music-note" title="Listen"></i>
-              </div>
-              <div class="menu_item">
-                <i class="bi bi-collection-play-fill" title="Library"></i>
-              </div>
-              <div class="menu_item">
-                <i class="bi bi-heart-fill" title="Favorites"></i>
-              </div>
-              <div class="menu_item">
-                <i class="bi bi-funnel-fill" title="Filter"></i>
-              </div>
+          <div class="menu_item active">
+            <i class="bi bi-music-note" title="Listen"></i>
+          </div>
+          <div class="menu_item">
+            <i class="bi bi-collection-play-fill" title="Library"></i>
+          </div>
+          <div class="menu_item">
+            <i class="bi bi-heart-fill" title="Favorites"></i>
+          </div>
+          <div class="menu_item">
+            <i class="bi bi-funnel-fill" title="Filter"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="middle">
+        <div class="middle_header">
+          <div class="middleheader_icon">
+            <i class="bi bi-caret-left-fill"></i>
+            <i class="bi bi-caret-right-fill"></i>
+          </div>
+          <div class="search-bar">
+            <i class="bi bi-search"></i>
+            <input
+              type="search"
+              placeholder="Search for artist, songs and..."
+            />
+          </div>
+        </div>
+
+        <div class="playlist">
+          <div class="playlist_header">
+            <h4>Playlist</h4>
+            <div class="scroll_arrows">
+              <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+              <i id="right_scroll" class="bi bi-arrow-right-short"></i>
             </div>
           </div>
 
-          <div class="middle">
-            <div class="middle_header">
-              <div class="middleheader_icon">
-                <i class="bi bi-caret-left-fill"></i>
-                <i class="bi bi-caret-right-fill"></i>
-              </div>
-              <div class="search-bar">
-                <i class="bi bi-search"></i>
-                <input
-                  type="search"
-                  placeholder="Search for artist, songs and..."
-                />
-              </div>
-            </div>
-
-            <div class="playlist">
-              <div class="playlist_header">
-                <h4>Playlist</h4>
-                <div class="scroll_arrows">
-                  <i id="left_scroll" class="bi bi-arrow-left-short"></i>
-                  <i id="right_scroll" class="bi bi-arrow-right-short"></i>
-                </div>
-              </div>
-
-              <div class="playlist_song">
-                <li class="song_item">
-                  <div class="img_play">
-                    <img src="img/1.jpg" alt="alan" />
-                    <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
-                    <span
-                      ><h7><small>3</small></h7> <i class="bi bi-star-fill"></i
-                    ></span>
-                  </div>
-
-                  <h5>
-                    Tobechukwu
-                    <br />
-                    <div class="subtitle">Nathaniel Bassey ft Mercy Chinwo</div>
-                  </h5>
-                </li>
-
-                <li class="song_item">
-                  <div class="img_play">
-                    <img src="img/2.jpg" alt="alan" />
-                    <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
-                    <span
-                      ><h7><small>5</small></h7> <i class="bi bi-star-fill"></i
-                    ></span>
-                  </div>
-
-                  <h5>
-                    Already
-                    <br />
-                    <div class="subtitle">Beyonce ft Shatta Wale</div>
-                  </h5>
-                </li>
-
-                <li class="song_item">
-                  <div class="img_play">
-                    <img src="img/3.jpg" alt="alan" />
-                    <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
-                    <span
-                      ><h7><small>4</small></h7> <i class="bi bi-star-fill"></i
-                    ></span>
-                  </div>
-
-                  <h5>
-                    Soso
-                    <br />
-                    <div class="subtitle">Omah Lay</div>
-                  </h5>
-                </li>
-
-                <li class="song_item">
-                  <div class="img_play">
-                    <img src="img/4.jpg" alt="alan" />
-                    <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
-                    <span
-                      ><h7><small>5</small></h7> <i class="bi bi-star-fill"></i
-                    ></span>
-                  </div>
-
-                  <h5>
-                    For my hand
-                    <br />
-                    <div class="subtitle">Burna Boy ft Ed Sheeran</div>
-                  </h5>
-                </li>
-              </div>
-            </div>
-
-            <!-- Music Library starts here -->
-            <div class="library">
-              <div class="library_header">
-                <h4>Music Library</h4>
-              </div>
-
-              <div class="library_song">
-                <div class="song_item">
-                  <img src="./img/5.jpg" alt="Alan" />
-                  <h5>
-                    Stand Strong
-                    <div class="subtitle"><small>Davido</small></div>
-                  </h5>
-
-                  <div>
-                    <h6><small>5</small></h6>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <i class="bi playListPlay bi-play-circle-fill play" id="2"></i>
-                </div>
-
-                <div class="song_item">
-                  <img src="./img/6.jpg" alt="Alan" />
-                  <h5>
-                    Blessings
-                    <div class="subtitle"><small>Chidinma ft KS Bloom</small></div>
-                  </h5>
-
-                  <div>
-                    <h6><small>3</small></h6>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <i class="bi playListPlay bi-play-circle-fill play" id="2"></i>
-                </div>
-              </div>
-
-              
-
-              <div class="library_song">
-                <div class="song_item">
-                  <img src="./img/7.jpg" alt="Alan" />
-                  <h5>
-                    R.T.I.D
-                    <div class="subtitle"><small>Kizz Daniel</small></div>
-                  </h5>
-
-                  <div>
-                    <h6><small>4</small></h6>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <i class="bi playListPlay bi-play-circle-fill play" id="2"></i>
-                </div>
-
-                <div class="song_item">
-                  <img src="./img/8.jpg" alt="Alan" />
-                  <h5>
-                    On My Way
-                    <div class="subtitle"><small>Alan Walker</small></div>
-                  </h5>
-
-                  <div>
-                    <h6><small>5</small></h6>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <i class="bi playListPlay bi-play-circle-fill play" id="2"></i>
-                </div>
-              </div>
-
-          
-
-              <div class="library_song">
-                <div class="song_item">
-                  <img src="./img/9.jpg" alt="Alan" />
-                  <h5>
-                    Alan Walker-Fade
-                    <div class="subtitle"><small>Alan Walker</small></div>
-                  </h5>
-
-                  <div>
-                    <h6><small>5</small></h6>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <i class="bi playListPlay bi-play-circle-fill play" id="2"></i>
-                </div>
-
-                <div class="song_item">
-                  <img src="./img/10.jpg" alt="Alan" />
-                  <h5>
-                    Cartoon - On & On
-                    <div class="subtitle"><small>Daniel Levi</small></div>
-                  </h5>
-
-                  <div>
-                    <h6><small>3</small></h6>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <i class="bi playListPlay bi-play-circle-fill play" id="2"></i>
-                </div>
-              </div>
-
-             
-              <div class="library_song">
-                <div class="song_item">
-                  <img src="./img/11.jpg" alt="Alan" />
-                  <h5>
-                    Electronic Music
-                    <div class="subtitle"><small>Electro</small></div>
-                  </h5>
-
-                  <div>
-                    <h6><small>3</small></h6>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <i class="bi playListPlay bi-play-circle-fill play" id="2"></i>
-                </div>
-
-                <div class="song_item">
-                  <img src="./img/12.jpg" alt="Alan" />
-                  <h5>
-                    Who God Don Bless
-                    <div class="subtitle"><small>PC Lapez</small></div>
-                  </h5>
-
-                  <div>
-                    <h6><small>4</small></h6>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <i class="bi playListPlay bi-play-circle-fill play" id="2"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="right">
-            <div class="notifs">
-              <i class="bi bi-bell-fill"></i>
-              <span></span>
-            </div>
-            <div class="image">
-              <img src="./img/1.jpg" />
-              <span>
-                <i class="bi bi-check-circle-fill"></i>
-              </span>
-            </div>
-            <h4>Favorites Artists</h4>
-    
-
-          
-
-            <div class="artist">
-              <div class="artist_image">
-                <img src="./img/gettyimages-1465426852.jpg" />
-                <span
-                  ><h7><small>5</small></h7> <i class="bi bi-star-fill"></i
-                ></span>
-              </div>
-              <h5>
-                On My Way
-                <div class="subtitle"><small>Lift Me Up</small></div>
-              </h5>
-              <i class="bi bi-person-fill-check"></i>
-              <i class="bi bi-three-dots"></i>
-            </div>
-
-            <div class="artist">
-              <div class="artist_image">
-                <img src="./img/Johnny-Drille.jpg" />
-                <span
-                  ><h7><small>4</small></h7> <i class="bi bi-star-fill"></i
-                ></span>
-              </div>
-              <h5>
-                Rihanna
-                <div class="subtitle"><small>Alan Walker</small></div>
-              </h5>
-              <i class="bi bi-person-fill-check"></i>
-              <i class="bi bi-three-dots"></i>
-            </div>
-
-            <div class="artist">
-              <div class="artist_image">
-                <img src="./img/Chandler-Moore.jpg" />
-                <span
-                  ><h7><small>5</small></h7> <i class="bi bi-star-fill"></i
-                ></span>
-              </div>
-              <h5>
-                Chandler Moore
-                <div class="subtitle"><small>Jireh</small></div>
-              </h5>
-              <i class="bi bi-person-fill-check"></i>
-              <i class="bi bi-three-dots"></i>
-            </div>
-
-            <div class="artist">
-              <div class="artist_image">
-                <img src="./img/Davido.jpg" />
-                <span
-                  ><h7><small>5</small></h7> <i class="bi bi-star-fill"></i
-                ></span>
-              </div>
-              <h5>
-               Davido
-                <div class="subtitle"><small>Stand Strong</small></div>
-              </h5>
-              <i class="bi bi-person-fill-check"></i>
-              <i class="bi bi-three-dots"></i>
-            </div>
-
-            <div class="artist">
-              <div class="artist_image">
-                <img src="./img/unnamed (19).jpg" />
+          <div class="playlist_song">
+            <li class="song_item">
+              <div class="img_play">
+                <img src="img/1.jpg" alt="alan" />
+                <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
                 <span
                   ><h7><small>3</small></h7> <i class="bi bi-star-fill"></i
                 ></span>
               </div>
+
               <h5>
-                Chdinma Ekile
-                <div class="subtitle"><small>Jehovah Overdo</small></div>
+                Tobechukwu
+                <br />
+                <div class="subtitle">Nathaniel Bassey ft Mercy Chinwo</div>
               </h5>
-              <i class="bi bi-person-fill-check"></i>
-              <i class="bi bi-three-dots"></i>
+            </li>
+
+            <li class="song_item">
+              <div class="img_play">
+                <img src="img/2.jpg" alt="alan" />
+                <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                <span
+                  ><h7><small>5</small></h7> <i class="bi bi-star-fill"></i
+                ></span>
+              </div>
+
+              <h5>
+                Already
+                <br />
+                <div class="subtitle">Beyonce ft Shatta Wale</div>
+              </h5>
+            </li>
+
+            <li class="song_item">
+              <div class="img_play">
+                <img src="img/3.jpg" alt="alan" />
+                <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                <span
+                  ><h7><small>4</small></h7> <i class="bi bi-star-fill"></i
+                ></span>
+              </div>
+
+              <h5>
+                Soso
+                <br />
+                <div class="subtitle">Omah Lay</div>
+              </h5>
+            </li>
+
+            <li class="song_item">
+              <div class="img_play">
+                <img src="img/4.jpg" alt="alan" />
+                <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                <span
+                  ><h7><small>5</small></h7> <i class="bi bi-star-fill"></i
+                ></span>
+              </div>
+
+              <h5>
+                For my hand
+                <br />
+                <div class="subtitle">Burna Boy ft Ed Sheeran</div>
+              </h5>
+            </li>
+          </div>
+        </div>
+
+        <!-- Music Library starts here -->
+        <div class="library">
+          <div class="library_header">
+            <h4>Music Library</h4>
+          </div>
+
+          <div class="library_song">
+            <div class="song_item">
+              <img src="./img/5.jpg" alt="Alan" />
+              <h5>
+                Stand Strong
+                <div class="subtitle"><small>Davido</small></div>
+              </h5>
+
+              <div>
+                <h6><small>5</small></h6>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <i class="bi playListPlay bi-play-circle-fill play" id="5"></i>
+            </div>
+
+            <div class="song_item">
+              <img src="./img/6.jpg" alt="Alan" />
+              <h5>
+                Blessings
+                <div class="subtitle"><small>Chidinma ft KS Bloom</small></div>
+              </h5>
+
+              <div>
+                <h6><small>3</small></h6>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <i class="bi playListPlay bi-play-circle-fill play" id="6"></i>
             </div>
           </div>
-          
+
+          <div class="library_song">
+            <div class="song_item">
+              <img src="./img/7.jpg" alt="Alan" />
+              <h5>
+                R.T.I.D
+                <div class="subtitle"><small>Kizz Daniel</small></div>
+              </h5>
+
+              <div>
+                <h6><small>4</small></h6>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <i class="bi playListPlay bi-play-circle-fill play" id="7"></i>
+            </div>
+
+            <div class="song_item">
+              <img src="./img/8.jpg" alt="Alan" />
+              <h5>
+                On My Way
+                <div class="subtitle"><small>Alan Walker</small></div>
+              </h5>
+
+              <div>
+                <h6><small>5</small></h6>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <i class="bi playListPlay bi-play-circle-fill play" id="8"></i>
+            </div>
+          </div>
+
+          <div class="library_song">
+            <div class="song_item">
+              <img src="./img/9.jpg" alt="Alan" />
+              <h5>
+                Alan Walker-Fade
+                <div class="subtitle"><small>Alan Walker</small></div>
+              </h5>
+
+              <div>
+                <h6><small>5</small></h6>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <i class="bi playListPlay bi-play-circle-fill play" id="9"></i>
+            </div>
+
+            <div class="song_item">
+              <img src="./img/10.jpg" alt="Alan" />
+              <h5>
+                Cartoon - On & On
+                <div class="subtitle"><small>Daniel Levi</small></div>
+              </h5>
+
+              <div>
+                <h6><small>3</small></h6>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <i class="bi playListPlay bi-play-circle-fill play" id="10"></i>
+            </div>
+          </div>
+
+          <div class="library_song">
+            <div class="song_item">
+              <img src="./img/11.jpg" alt="Alan" />
+              <h5>
+                Electronic Music
+                <div class="subtitle"><small>Electro</small></div>
+              </h5>
+
+              <div>
+                <h6><small>3</small></h6>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <i class="bi playListPlay bi-play-circle-fill play" id="11"></i>
+            </div>
+
+            <div class="song_item">
+              <img src="./img/12.jpg" alt="Alan" />
+              <h5>
+                Who God Don Bless
+                <div class="subtitle"><small>PC Lapez</small></div>
+              </h5>
+
+              <div>
+                <h6><small>4</small></h6>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <i class="bi playListPlay bi-play-circle-fill play" id="12"></i>
+            </div>
+          </div>
         </div>
-        <div class="master_play">
-          <img src="img/1.jpg" alt="Alan" id="poster_master_play" />
-          <h5 id="title">
-            On My Way <br />
-            <div class="subtitle"><small>Alan Walker</small></div>
+      </div>
+      <div class="right">
+        <div class="notifs">
+          <i class="bi bi-bell-fill"></i>
+          <span></span>
+        </div>
+        <div class="image">
+          <img src="./img/1.jpg" />
+          <span>
+            <i class="bi bi-check-circle-fill"></i>
+          </span>
+        </div>
+        <h4>Favorites Artists</h4>
+
+        <div class="artist">
+          <div class="artist_image">
+            <img src="./img/gettyimages-1465426852.jpg" />
+            <span
+              ><h7><small>5</small></h7> <i class="bi bi-star-fill"></i
+            ></span>
+          </div>
+          <h5>
+            Rihanna
+            <div class="subtitle"><small>Lift Me Up</small></div>
           </h5>
-          <div class="icon">
-            <i class="bi bi-skip-start-fill" id="back"></i>
-            <i
-              class="bi playListPlay bi-play-circle-fill play"
-              id="masterPlay"
-            ></i>
-            <i class="bi bi-stop-fill" id="stop"></i>
-            <i class="bi bi-skip-end-fill" id="next"></i>
-          </div>
-
-          <div id="waveform"></div>
-          <span id="currentStart">0:00</span>
-          <div class="bar">
-            <input type="range" id="seek" min="0" value="0" max="100" />
-            <div id="bar2" class="bar2"></div>
-            <div class="dot"></div>
-          </div>
-          <span id="currentEnd">0:00</span>
-
-          <div class="vol">
-            <i class="bi bi-volume-down-fill" id="vol_icon"></i>
-            <input type="range" id="vol" min="0" value="30" max="100" />
-            <div class="vol_bar"></div>
-            <div class="dot" id="vol_dot"></div>
-          </div>
-
-          <div class="loader">
-            <span class="stroke"></span>
-            <span class="stroke"></span>
-            <span class="stroke"></span>
-            <span class="stroke"></span>
-            <span class="stroke"></span>
-            <span class="stroke"></span>
-            <span class="stroke"></span>
-          </div>
+          <i class="bi bi-person-fill-check"></i>
+          <i class="bi bi-three-dots"></i>
         </div>
 
-        <script src="https://unpkg.com/wavesurfer.js"></script>
-        <script src="app.js"></script>
-      </body>
-    </html>
+        <div class="artist">
+          <div class="artist_image">
+            <img src="./img/Johnny-Drille.jpg" />
+            <span
+              ><h7><small>4</small></h7> <i class="bi bi-star-fill"></i
+            ></span>
+          </div>
+          <h5>
+            Johnny Drille
+            <div class="subtitle"><small>My Friend</small></div>
+          </h5>
+          <i class="bi bi-person-fill-check"></i>
+          <i class="bi bi-three-dots"></i>
+        </div>
+
+        <div class="artist">
+          <div class="artist_image">
+            <img src="./img/Chandler-Moore.jpg" />
+            <span
+              ><h7><small>5</small></h7> <i class="bi bi-star-fill"></i
+            ></span>
+          </div>
+          <h5>
+            Chandler Moore
+            <div class="subtitle"><small>Jireh</small></div>
+          </h5>
+          <i class="bi bi-person-fill-check"></i>
+          <i class="bi bi-three-dots"></i>
+        </div>
+
+        <div class="artist">
+          <div class="artist_image">
+            <img src="./img/Davido.jpg" />
+            <span
+              ><h7><small>5</small></h7> <i class="bi bi-star-fill"></i
+            ></span>
+          </div>
+          <h5>
+            Davido
+            <div class="subtitle"><small>Stand Strong</small></div>
+          </h5>
+          <i class="bi bi-person-fill-check"></i>
+          <i class="bi bi-three-dots"></i>
+        </div>
+
+        <div class="artist">
+          <div class="artist_image">
+            <img src="./img/unnamed (19).jpg" />
+            <span
+              ><h7><small>3</small></h7> <i class="bi bi-star-fill"></i
+            ></span>
+          </div>
+          <h5>
+            Chdinma Ekile
+            <div class="subtitle"><small>Jehovah Overdo</small></div>
+          </h5>
+          <i class="bi bi-person-fill-check"></i>
+          <i class="bi bi-three-dots"></i>
+        </div>
+      </div>
+    </div>
+    <div class="master_play">
+      <img src="img/1.jpg" alt="Alan" id="poster_master_play" />
+      <h5 id="title">
+        Tobechukwu<br />
+        <div class="subtitle">
+          <small>Nathaniel Bassey ft Mercy Chinwo</small>
+        </div>
+      </h5>
+      <div class="icon">
+        <i class="bi bi-skip-start-fill" id="back"></i>
+        <i class="bi bi-play-circle-fill play" id="masterPlay"></i>
+
+        <i class="bi bi-skip-end-fill" id="next"></i>
+      </div>
+
+      <div id="waveform"></div>
+      <span id="currentStart">0:00</span>
+      <div class="bar">
+        <input type="range" id="seek" min="0" value="0" max="100" />
+        <div id="bar2" class="bar2"></div>
+        <div class="dot"></div>
+      </div>
+      <span id="currentEnd">0:00</span>
+
+      <div class="vol">
+        <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+        <input type="range" id="vol" min="0" value="30" max="100" />
+        <div class="vol_bar"></div>
+        <div class="dot" id="vol_dot"></div>
+      </div>
+
+      <div class="loader">
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
